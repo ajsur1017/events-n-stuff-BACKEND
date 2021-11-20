@@ -22,6 +22,7 @@ router.post("/events", async (req, res) => {
         res.json(await Events.create(req.body));
     } catch (error) {
         res.status(400).json({error: "its breaking"});
+        console.log(error)
     }
 })
 // Update
