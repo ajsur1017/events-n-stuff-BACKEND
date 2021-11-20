@@ -27,9 +27,7 @@ mongoose.connection
 ////
 const EventsSchema = new mongoose.Schema({
     name: String,
-    dateDay: Number,
-    dateMonth: String,
-    dateYear: Number,
+    date: Date,
     startTime: String,
     endTime: String,
     location: String,
