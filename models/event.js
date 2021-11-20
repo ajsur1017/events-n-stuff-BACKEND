@@ -10,6 +10,7 @@ const eventsSchema = new Schema(
         cost: String,
         image: String,
         user: String,
+        attendees: Array,
     },
     { timestamps: true }
 );
