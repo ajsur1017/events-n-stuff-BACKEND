@@ -1,4 +1,5 @@
 require("dotenv").config()
+const { SECRET } = process.env
 const User = require("../models/user")
 const bcrypt = require("bcryptjs")
 const jwt = require("jsonwebtoken")
@@ -17,12 +18,15 @@ router.post("/signup", async (req, res) => {
 
 router.post("/login", async (req, res) => {
     try {
+
         const { username, password } = req.body;
         const user = await User.findOne({ username })
         if (user){
             const match = await bcrypt.compare(password, user.password);
             if (match) {
+                console.log("testing")
                 const token = await jwt.sign({ username }, SECRET);
+                console.log(token)
                 res.status(200).json({ token })
             } else { 
                 res.status(400).json({ error: "PASSWORD DOES NOT MATCH" })

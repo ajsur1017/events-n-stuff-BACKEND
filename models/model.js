@@ -5,8 +5,6 @@ const eventsSchema = new Schema(
         username: { type: String, require: true, unique: true },
         name: String,
         date: Date,
-        startTime: String,
-        endTime: String,
         location: String,
         description: String,
         cost: String,
