@@ -2,41 +2,13 @@
 // Dependencies
 ////
 require("dotenv").config()
-const { PORT, MONGODB_URL } = process.env
-const express = require("express")
+const express = require ("express")
 const app = express()
-const mongoose = require("mongoose")
+const { PORT, MONGODB_URL } = process.env
 const cors = require("cors")
 const morgan = require("morgan")
-
-////
-// Connection
-////
-mongoose.connect(MONGODB_URL, {
-    useUnifiedTopology: true,
-    useNewUrlParser: true
-})
-// Connection Events
-mongoose.connection
-.on("open", () => console.log("Connected to Mongo"))
-.on("close", () => console.log("Disonnected to Mongo"))
-.on("error", (error) => console.log(error))
-
-////
-// Models
-////
-const EventsSchema = new mongoose.Schema({
-    name: String,
-    date: Date,
-    startTime: String,
-    endTime: String,
-    location: String,
-    description: String,
-    cost: String,
-    image: String,
-    user: String,
-})
-const Events = mongoose.model("Events", EventsSchema)
+const mongoose = require("./db/db")
+const AuthRouter = require("./controllers/user")
 
 ////
 // Middleware
@@ -44,6 +16,11 @@ const Events = mongoose.model("Events", EventsSchema)
 app.use(cors())
 app.use(morgan("dev"))
 app.use(express.json())
+
+////
+// Routers
+////
+app.use("/auth", AuthRouter)
 
 ////
 // Routes
