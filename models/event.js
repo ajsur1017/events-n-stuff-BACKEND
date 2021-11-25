@@ -2,7 +2,7 @@ const { Schema, model } = require("mongoose")
 
 const eventsSchema = new Schema(
     {
-        username: { type: String, require: true, unique: true },
+        organizer: String,
         name: String,
         date: Date,
         location: String,
