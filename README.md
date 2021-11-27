@@ -46,7 +46,7 @@ Check out the <a href="https://github.com/ajsur1017/events-n-stuff-frontend">Fro
 <img src="https://imgur.com/1mbVRDf.png"/>
 
 ### Event Model
-<img src="https://imgur.com/1mbVRDf.png"/>
+<img src="https://imgur.com/n9fXoCw.png"/>
 
 ## Contributor Info
 
