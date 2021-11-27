@@ -19,8 +19,6 @@ router.get("/events", async (req, res) => {
 // New
 router.post("/events", async (req, res) => {
     try {
-        req.body.attendees = []
-        req.body.username = "TestUser"
         res.json(await Events.create(req.body));
     } catch (error) {
         res.status(400).json({error: "its breaking"});
