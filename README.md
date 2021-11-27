@@ -34,35 +34,19 @@ Check out the <a href="https://github.com/ajsur1017/events-n-stuff-frontend">Fro
 
 ## Code Snippets
 
-### User Verification 
+### User Routes
 
-App.js
+<img src="https://imgur.com/NyrZg2e.png"/>
 
-Checked for Logged in User:
-<img src="https://imgur.com/dGX8l0o.png"/>
+### User Model
 
-Feed Global State Token to Main and Login/Signup Component:s
-<img src="https://imgur.com/Ia4Za0l.png"/>
+<img src="https://imgur.com/wcGv3TG"/>
 
-Login.js
-<img src="https://imgur.com/oeeg2vd.png"/>
+### Event Routes
+<img src="https://imgur.com/1mbVRDf.png"/>
 
-Singup.js
-<img src="https://imgur.com/O7HgDcV.png"/>
-
-### Search / Filter / Map Function
-Index.js
-<img src="https://imgur.com/VoKGQIV.png"/>
-
-### Conditional User Authorization
-
-Create Event:
-
-<img src="https://imgur.com/szONf4v.png"/>
-
-Update/Delete Event:
-
-<img src="https://imgur.com/wXmd4lD.png"/>
+### Event Model
+<img src="https://imgur.com/1mbVRDf.png"/>
 
 ## Contributor Info
 
