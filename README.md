@@ -40,7 +40,7 @@ Check out the <a href="https://github.com/ajsur1017/events-n-stuff-frontend">Fro
 
 ### User Model
 
-<img src="https://imgur.com/wcGv3TG"/>
+<img src="https://imgur.com/wcGv3TG.png"/>
 
 ### Event Routes
 <img src="https://imgur.com/1mbVRDf.png"/>
