@@ -2,7 +2,13 @@
 
 This project was created by Tom Ames, Nick Davis, and Anthony Surace. This is the back-end repo for this project.
 
-Looking for Frontend? Check out the <a href="https://github.com/ajsur1017/events-n-stuff-frontend">Frontend Repo</a>!
+Looking for Frontend? Check out the <a href="https://github.com/ajsur1017/events-n-stuff-frontend">Frontend Repo</a>.
+
+Looking for Trello? Check out the <a href="https://trello.com/b/ejpanVcd/event-track-app">Events n' Stuff Trello Board</a>.
+
+Looking for Heroku? Check out the <a href="https://events-n-stuff.herokuapp.com/events/">Events Database</a>.
+
+Want to get to your Event-Planning? Check out <a href="https://events-n-stuff.netlify.app/">Events n' Stuff</a>!
 
 ## Mission
 
