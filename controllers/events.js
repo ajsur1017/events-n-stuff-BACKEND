@@ -45,7 +45,7 @@ router.delete("/events/:id", async (req, res) => {
 });
 
 router.get("/index.html", (req, res) => {
-        res.redirect("/events");
+        res.redirect("/");
 })
 
 module.exports = router
