@@ -44,12 +44,4 @@ router.delete("/events/:id", async (req, res) => {
     }
 });
 
-router.get("/index.html", async (req, res) => {
-    try {
-        res.json(await Events.find({}));
-    } catch (error) {
-        res.status(400).json(error);
-    }
-})
-
 module.exports = router
