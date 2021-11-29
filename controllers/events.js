@@ -16,6 +16,15 @@ router.get("/events", async (req, res) => {
         res.status(400).json(error);
     }
 })
+// My Events Index
+router.get("/myevents", async (req, res) => {
+    try {
+        res.json(await Events.find({}));
+    } catch (error) {
+        res.status(400).json(error);
+    }
+})
+
 // New
 router.post("/events", async (req, res) => {
     try {
