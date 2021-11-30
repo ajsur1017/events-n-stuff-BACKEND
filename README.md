@@ -28,11 +28,11 @@ The backend side of the application, spearheaded by Anthony Surace, manages the 
 
 - Create User Authentication / Authorization
 - Multiple Models (User / Events)
+- Tie Models User + Events Together
 
 ## Stretch Goals
 
 - Implement with Public Events API
-- Tie Models User + Events Together
 
 ## Site Info
 
